@@ -1,0 +1,37 @@
+#1  Answer: => 7
+    The my_value method will not change the value of 'a'. (Numbers are immutable)
+    
+#2  Answer: => 7
+    The my_value method will still not change the initial value of 'a', even 
+    though the same variable is used within the method. (Nums are immutable)
+    
+#3  Answer: => 7
+    While the object associated with 'a' may be called work within the method 
+    my_value, it still does not change the value of 'a'. (Nums ==> immutable)
+    
+#4  Answer: => 'Xy-zy'
+    The method string[2] = x is a mutating method (even though it is within method my_value) 
+    and strings are mutable objects. 
+    
+#5  Answer: => 'Xyzzy' 
+    Whereas the previous method mutated the object within my_value, this version of 
+    my_value just reassigns the variable, creating a new string instead of mutating 'Xyzzy'
+
+#6  Answer: => This code would raise an error because there is no value assigned
+    to the variable 'a' within the my_value method. They're both local variables, but 
+    one is outside of a method, and the other is inside, so they're invisible to each other. 
+
+#7  Answer: => 3
+    Unlike methods, code blocks can change local variables defined outside of the block. 
+    
+#8  Answer: This will return an error because 'a' is not introduced as a variable outside 
+    of the code block.  
+    
+#9  Answer: => 7
+    In this case the code block may use the variable 'a', but it's just a repeated identity. 
+    It has no effect on the value for 'a' introduced prior to the code block. 
+    
+#10 This code would also raise an error because the variable 'a' was not assigned within the method
+    before being called. 
+    
+    

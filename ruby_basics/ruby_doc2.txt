@@ -1,0 +1,56 @@
+** Ruby Documentation 2 **
+
+#1  "xyz".upcase
+
+#2  a.insert(3, 5, 6, 7)
+
+#3  puts s.split.inspect
+    => [“abc”, “def”, “ghi,jkl”, “mno”, “pqr,stu” , “vwx”, “yz”]
+    puts s.split(‘,’).inspect
+    => [“abc def ghi”, “jkl mno pqr”,”stu vwx yz”]
+    puts s.split(‘,’,2).inspect
+    => [“abc def ghi”, “jkl mno pqr,stu vwx yz”]
+    
+#4  The information for dates is in the standard library: 
+    puts Date.new
+    => -4712-01-01
+    puts Date.new(2016)
+    => 2016-01-01
+    puts Date.new(2016, 5)
+    => 2016-05-01
+    puts Date.new(2016, 5, 13)
+    => 2016-05-13
+    
+#5  The information about #bsearch is in the Array class. You can find the 
+    first element whose value exceeds 8 with:
+    a = [1,4,8,11,15,19]
+    puts a.bsearch {|x| x > 8}
+    
+#6  a = %w(a,b,c,d,e)
+    puts a.fetch(7) 
+    => <index error>
+    puts a.fetch(7, 'beats me')
+    => beats me
+    puts a.fetch(7) {|index| index**2}
+    => 49
+    
+#7  5.step(to: 10, by: 3) { |value| puts value }
+    => 5, 8 
+    The documentation for 'step' is under the 'Numeric' section.  However, 
+    This is not how you do it for ruby 2.0 (which is on my Macbook)
+    
+#8  s = 'abc'
+    puts s.public_methods(all=false).inspect 
+    This code will print only the public methods for the object and not the
+    the inherited methods from the parent class. (I found this in the 'Methods'
+    column of Ruby documentation. 
+    
+#9  a = [5, 9, 3, 11]
+    puts a.min(2)  => 3,5  
+    The information for 'min' is in the Enumerable module documentation. 
+    
+#10 https://ruby-doc.org/stdlib-2.1.0/libdoc/psych/rdoc/Psych.html#method-c-load_file
+    This is where to find the documentation for YAML::load_file
+    The Pysch class is about methods that will be useful when working with YAML files.
+    
+

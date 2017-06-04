@@ -1,0 +1,19 @@
+
+[1mFrom:[0m /home/ubuntu/ruby_exercise/ruby_small_problems/medium1.rb @ line 118 Object#diamond:
+
+    [1;34m110[0m: [32mdef[0m [1;34mdiamond[0m(n)
+    [1;34m111[0m:   star = [31m[1;31m'[0m[31m*[1;31m'[0m[31m[0m
+    [1;34m112[0m:   diamond_vault = []
+    [1;34m113[0m:   loop [32mdo[0m
+    [1;34m114[0m:     puts star.center(n)
+    [1;34m115[0m:     [32mbreak[0m [32mif[0m star.size == n
+    [1;34m116[0m:     diamond_vault << star
+    [1;34m117[0m:     star += [31m[1;31m"[0m[31m**[1;31m"[0m[31m[0m
+ => [1;34m118[0m:     binding.pry
+    [1;34m119[0m:   [32mend[0m
+    [1;34m120[0m:   loop [32mdo[0m
+    [1;34m121[0m:     puts diamond_vault.pop.center(n)
+    [1;34m122[0m:     [32mbreak[0m [32mif[0m diamond_vault.empty?
+    [1;34m123[0m:   [32mend[0m
+    [1;34m124[0m: [32mend[0m
+

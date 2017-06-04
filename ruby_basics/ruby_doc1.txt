@@ -1,0 +1,26 @@
+*** Ruby Documentation 1 ***
+
+#1  You find the most complete Ruby documentation at http://ruby-doc.org
+
+#2  While loops are in the syntax documentation under 'Control-expressions'
+
+#3  The result of a while loop is nil unless 'break' is used to supply a value
+
+#4  'Break' returns nil unless an argument is passed in, then it returns the 
+    value of the argument
+
+#5  The information for large numbers is in the 'literals' section.  You can 
+    use underscores to replace commas in large numbers. 
+
+#6  Symbols are also under the 'literals' documentation.  My name as a symbol is 
+    :Melissa
+    
+#7  The information for default arguments is in the 'syntax/calling methods' file.
+    This code will print ==> [4,5,3,6]
+    
+#8  You can find the 'String' class under the 'Methods' header. 
+
+#9  Find the right justify method under under String#rjust
+
+#10 File::path = Class Method  and File#path is an instance method
+
