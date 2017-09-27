@@ -20,11 +20,14 @@
 # SECONDS_PER_DEGREE = MINUTES_PER_DEGREE * SECONDS_PER_MINUTE
 
 # def dms(degrees_float)
-#   total_seconds = (degrees_float * SECONDS_PER_DEGREE).round
+#   total_seconds = (degrees_float * SECONDS_PER_DEGREE).round.abs #further exploration
 #   degrees, remaining_seconds = total_seconds.divmod(SECONDS_PER_DEGREE)
 #   minutes, seconds = remaining_seconds.divmod(SECONDS_PER_MINUTE)
+#   degrees = -degrees if degrees_float < 0 # further exploration
 #   format(%(#{degrees}#{DEGREE}%02d'%02d"), minutes, seconds)
 #   end
+
+
 
 ## Exercise 2 Delete vowels
 
